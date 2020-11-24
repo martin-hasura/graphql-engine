@@ -33,9 +33,9 @@
   }
 
   .react-progress-bar-percent {
-    height: 2px;
-    background: #e8694d;
-    box-shadow: 0 2px 5px #d3291c, 0 2px 5px #d3291c;
+    height: 4px;
+    background: #49B5D4;
+    box-shadow: 0 2px 5px #348096, 0 2px 5px #348096;
     transition: all 200ms ease;
   }
 
@@ -60,8 +60,8 @@
     height: 18px;
     box-sizing: border-box;
     border: solid 2px transparent;
-    border-top-color: #d3291c;
-    border-left-color: #d3291c;
+    border-top-color: #348096;
+    border-left-color: #348096;
     border-radius: 50%;
     animation: react-progress-spinner 400ms linear infinite;
   }

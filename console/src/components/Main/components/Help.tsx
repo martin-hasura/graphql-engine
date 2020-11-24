@@ -7,7 +7,7 @@ export const Help = ({ isSelected }: { isSelected: boolean }) => {
   return (
     <Link to="/support/forums/">
       <div className={styles.headerRightNavbarBtn}>
-        HELP
+        Help
         {isSelected ? (
           <span
             className={styles.selected}

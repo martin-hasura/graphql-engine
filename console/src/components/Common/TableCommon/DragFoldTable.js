@@ -116,8 +116,8 @@ export const getColWidth = (
   MAX_WIDTH = 600,
   HEADER_PADDING = 62,
   CONTENT_PADDING = 18,
-  HEADER_FONT = 'bold 16px Gudea',
-  CONTENT_FONT = '14px Gudea'
+  HEADER_FONT = 'bold 16px Inter',
+  CONTENT_FONT = '14px Inter'
 ) => {
   const getTextWidth = (text, font) => {
     // Doesn't work well with non-monospace fonts

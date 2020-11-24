@@ -14,6 +14,7 @@
 }
 
 .add_table_column_selector__control, .add_table_default_value_selector__control  {
+  background: #fbfbfb !important;
   min-height: 34px !important;
   max-height: 34px !important;
 }
@@ -22,6 +23,11 @@
   margin-top: -2px;
 }
 // react select overrides: end
+
+.input-group-btn:first-child > .btn, .input-group-btn:first-child > .btn-group{
+  margin-right: -2px !important;
+  box-shadow: none;
+}
 
 input[type="radio"], input[type="checkbox"] {
   margin: 0 5px 0px 0px;
@@ -65,22 +71,22 @@ form {
     margin-bottom: 0em;
 }
 
-.form-control:focus {
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0px rgba(102, 175, 233, 0.6);
-}
-
 .form-control {
-  // border-radius: 0;
+  color: #333333 !important;
+  box-shadow: none !important;
+  background-color: #fbfbfb !important; 
   height: auto;
+  transition: all 0.15s ease-in-out;
 }
-
-select.form-control {
-  border-radius: 0;
-  -webkit-border-radius: 0px;
+.form-control:focus {
+  background-color: #ffffff !important; 
+  box-shadow: 0 0 0 4px rgba(73, 181, 212, 0.1) !important;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+  opacity:0.5 !important;
 }
 
 .btn {
-  // border-radius: 0;
   outline: none;
 }
 
@@ -98,6 +104,42 @@ select.form-control {
 
 .alert {
 	word-wrap: break-word;
+}
+
+.btn-xs{
+  box-shadow: none !important;
+}
+.btn-default{
+  background-color: #fbfbfb !important;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0)) !important;
+  border-color: #A7A7A7 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08);
+  padding: 5px 10px;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  &:hover {
+    background-color: #F1F1F1 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.btn-danger{
+  background-color: #d04848;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.3), rgba(255,255,255,0)) !important;
+  border-color: #8B3030 !important;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 5px 10px;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.15s ease-in-out;
+  &:hover {
+    background-color: #BF4242;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.3), rgba(255,255,255,0)) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .btn-warning {
@@ -158,7 +200,7 @@ select.form-control {
 
   .modal-content {
     .modal-header {
-      background-color: #F8FAFB;
+      background-color: #ffffff;
       color: #222 ;
       padding: 20px;
       border-top-left-radius: 4px;
@@ -249,13 +291,12 @@ select.form-control {
 
           .ace_editor {
             min-height: 150px;
-            border: 1px solid #ccc;
             border-radius: 5px;
           }
 
           .ace-github {
             min-height: 150px;
-            border: 1px solid #ccc;
+            border: 1px solid #cccccc;
             border-radius: 5px;
           }
         }
@@ -263,6 +304,11 @@ select.form-control {
     }
   }
 }
+
+.ace_editor {
+  border: 1px solid #cccccc;
+}
+
 .invocationClass
 {
   clear: both;

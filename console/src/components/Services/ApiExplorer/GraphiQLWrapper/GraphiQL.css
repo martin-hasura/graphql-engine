@@ -237,7 +237,6 @@
   color: #777;
   font-variant: small-caps;
   font-weight: bold;
-  letter-spacing: 1px;
   line-height: 14px;
   padding: 6px 0 8px 43px;
   text-transform: lowercase;
@@ -758,7 +757,7 @@ div.CodeMirror-lint-tooltip > * + * {
   left: 40px;
   right: 40px;
   bottom: 40px;
-  border: 1px solid rgb(204, 204, 204);
+  border: 0px;
   background: rgb(255, 255, 255);
   border-radius: 4px;
   outline: none;
@@ -769,15 +768,15 @@ div.CodeMirror-lint-tooltip > * + * {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 100;
 }
 .modalHeader {
-  background-color: #43495a;
-  border-bottom: 1px solid #ccc;
+  background-color: #111b29;
+  border-bottom: 0px;
   padding: 10px 20px;
   position: relative;
-  color: #ffc627;
+  color: #ffffff;
 }
 .modalTitle {
   font-size: 18px;
@@ -792,17 +791,19 @@ div.CodeMirror-lint-tooltip > * + * {
   cursor: pointer;
   border-radius: 5px;
   border: 0;
-  background-color: transparent;
+  background-color: transparent !important;
   font-size: 16px;
-  font-weight: 700;
-  color: #ccc;
-  padding: 0px;
+  font-weight: 600;
+  color: #ccc !important;
+  padding-left: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
   height: auto;
 }
 .modalClose button:hover {
   border: 0;
-  background-color: transparent;
-  color: #fff;
+  background-color: transparent !important;
+  color: #fff !important;
 }
 .modalClose button:focus {
   outline: none;
@@ -814,6 +815,7 @@ div.CodeMirror-lint-tooltip > * + * {
   height: calc(100% - 46px);
 }
 .topLevelNodesWrapper {
+  background-color: #fbfbfb;
   border-right: 1px solid #ccc;
   height: 100%;
 }
@@ -823,11 +825,12 @@ div.CodeMirror-lint-tooltip > * + * {
 }
 .topLevelNodesWrapper .title {
   padding: 15px 20px;
-  background-color: #fff3d5;
-  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-left: 4px solid #49b5d4;
+  margin-bottom: 0;
   color: #767e93;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
 }
 .analysisWrapper {
   height: 100%;
@@ -843,13 +846,17 @@ div.CodeMirror-lint-tooltip > * + * {
   -o-padding-inline-start: 0px;
   margin-top: 0;
   margin-bottom: 0;
+  border-left: 4px solid #49b5d4;
+  padding-top:8px;
 }
 .borderRight {
   border-right: 1px solid #ccc;
 }
+
 .topLevelNodesWrapper ul li {
+  color: #767e93;
   list-style-type: none;
-  padding: 10px 0;
+  padding: 4px 0;
   padding-left: 20px;
   cursor: pointer;
 }
@@ -860,10 +867,10 @@ div.CodeMirror-lint-tooltip > * + * {
 }
 
 .topLevelNodesWrapper ul li.active {
-  color: #fd9540;
+  color: #e65678;
 }
 .topLevelNodesWrapper ul li:hover {
-  color: #e2701a;
+  color: #e65678;
 }
 .plansWrapper {
   height: 50%;
@@ -899,11 +906,12 @@ div.CodeMirror-lint-tooltip > * + * {
 .codeBlock {
   /* position: relative;
   padding: 10px 20px; */
-  background-color: rgb(253, 249, 237);
+  background-color: #fbfbfb;
+  border: 1px solid #cccccc; 
   /* margin: 20px;
   width: 100%; */
   width: auto;
-  border-radius: 5px;
+  border-radius: 4px;
   max-height: calc(100% - 60px);
   overflow: auto;
   margin-top: 0px;
@@ -1589,7 +1597,6 @@ span.CodeMirror-selectedtext {
   font-size: 14px;
   font-variant: small-caps;
   font-weight: bold;
-  letter-spacing: 1px;
   margin: 0 -15px 10px 0;
   padding: 10px 0;
   -webkit-user-select: none;
@@ -1670,7 +1677,6 @@ span.CodeMirror-selectedtext {
   display: block;
   font-size: 9px;
   font-weight: bold;
-  letter-spacing: 1px;
   line-height: 1;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -1759,7 +1765,6 @@ span.CodeMirror-selectedtext {
 .graphiql-container .error-container {
   font-weight: bold;
   left: 0;
-  letter-spacing: 1px;
   opacity: 0.5;
   position: absolute;
   right: 0;
@@ -1898,7 +1903,6 @@ span.CodeMirror-selectedtext {
   display: block;
   font-size: 9px;
   font-weight: bold;
-  letter-spacing: 1px;
   line-height: 1;
   padding-bottom: 5px;
   text-transform: uppercase;
@@ -2133,7 +2137,6 @@ li.CodeMirror-hint-active {
   display: block;
   font-size: 9px;
   font-weight: bold;
-  letter-spacing: 1px;
   line-height: 1;
   padding-bottom: 5px;
   text-transform: uppercase;

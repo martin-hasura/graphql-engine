@@ -128,13 +128,12 @@
 }
 
 .project_version {
-  font-family: Gudea;
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
   color: #fff;
   text-transform: lowercase;
   display: inline-block;
   padding-left: 10px;
   font-size: 10px;
-  letter-spacing: 1px;
   font-weight: 300;
   padding-top: 6px;
 }
@@ -160,7 +159,7 @@
   .clusterBtn {
     background-color: transparent;
     color: #dedede;
-    font-weight: 700;
+    font-weight: 600;
     pointer-events: none;
 
     .caret {
@@ -364,20 +363,20 @@
 
   .subheading_text {
     font-size: 45px;
-    font-family: 'Gudea';
+    font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
     font-weight: 400;
   }
 
   .description {
     font-size: 16px;
-    font-family: 'Gudea';
+    font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
     font-weight: 400;
     padding-bottom: 10px;
   }
 
   .welcomeText {
     font-size: 25px;
-    font-family: 'Gudea';
+    font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
     font-weight: 400;
     color: #fec53d;
     padding-top: 20px;
@@ -391,7 +390,7 @@
 
   .smallDescription {
     font-size: 12px;
-    font-family: 'Gudea';
+    font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
     font-weight: 400;
     padding-bottom: 20px;
 
@@ -422,10 +421,9 @@
 
 .sidebar {
   color: #dedede;
-  background-color: #43495a;
-  font-family: 'Gudea';
-  font-weight: 700;
-  text-transform: uppercase;
+  background-color: #111b29;
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
+  font-weight: 600;
   display: flex;
   align-items: center;
   position: fixed;
@@ -448,24 +446,22 @@
 
     a,
     a:visited {
-      color: #dedede;
+      color: #929dab;
     }
 
     a:hover {
-      color: #dedede;
+      color: #fff;
     }
 
     li {
       transition: color 0.5s;
       font-size: 14px;
-      letter-spacing: 1px;
       display: inline-block;
 
       p {
         padding-left: 5px;
         display: inline-block;
         font-size: 14px;
-        letter-spacing: 1px;
         margin: 0 0 0px;
       }
 
@@ -543,14 +539,14 @@
     }
 
     .navSideBarActive {
-      border-bottom: 4px solid #ffc627;
+      border-bottom: 4px solid #1eb4d4;
 
       i {
-        color: #ffc627;
+        color: #1eb4d4;
       }
 
       p {
-        color: #ffc627;
+        color: #1eb4d4;
       }
     }
 
@@ -627,9 +623,9 @@
   padding: 0;
   // width: 100vw;
   min-width: $minContainerWidth;
-  background-color: #f8fafb;
+  background-color: #ffffff;
   clear: both;
-  font-family: 'Gudea';
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
   // color: #767E93;
   color: #4d4d4d;
   padding-top: 50px;
@@ -652,7 +648,6 @@
   font-weight: bold;
   padding-left: 20px;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .projectStatus {
@@ -758,7 +753,7 @@
   position: fixed;
   right: 0px;
   z-index: 12;
-  font-family: 'Gudea';
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
 
   p {
     font-size: 16px;
@@ -895,30 +890,36 @@
   border-bottom: 1px solid #788095;
 }
 
-.headerRightNavbarBtn {
+.headerRightNavbarBtn{
   display: flex;
   align-items: center;
   // background-color: #22283b;
   padding: 15px;
   position: relative;
-  color: #fff;
+  color: #929dab;
   cursor: pointer;
+  font-weight: 600;
 
   &:hover {
-    span {
-      opacity: 0.7;
-      font-weight: 600;
-    }
+    color: #ffffff;
   }
 
   .selected {
     bottom: 0;
-    background: #ffc627;
+    color: #49b5d4;
+    background: #49b5d4;
     position: absolute;
     z-index: 999999999;
     height: 4px;
     width: 100%;
     left: 0px;
+  }
+}
+
+.headerRightNavbarBtn i{
+  color: #929dab;
+  &:hover {
+    color: #ffffff;
   }
 }
 
@@ -991,7 +992,6 @@
   text-transform: uppercase;
   padding-top: 10px;
   text-align: center;
-  letter-spacing: 1px;
 
   padding-top: 0;
   color: #606060;
@@ -1006,7 +1006,6 @@
   padding: 10px 0;
   text-align: left;
   line-height: 1.8;
-  letter-spacing: 1px;
 }
 
 .help_dropdown_menu {
@@ -1196,20 +1195,19 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.6;
-    letter-spacing: 1px;
     cursor: pointer;
     &:hover {
       opacity: 0.8;
     }
   }
   .proName {
-    color: #1cd3c6;
+    color: #1eb4d4;
   }
   .proNameClicked {
-    color: #fff;
+    color: #1eb4d4;
   }
   .navActive {
-    color: #f8c53c;
+    color: #1eb4d4;
     opacity: 1 !important;
     &:hover {
       opacity: 1 !important;
@@ -1505,7 +1503,7 @@
     .sidebarItems {
       li {
         p {
-          font-size: 12px;
+          font-size: 13px;
         }
         a {
           margin-left: 10px;
@@ -1515,13 +1513,13 @@
   }
 
   .headerRightNavbarBtn {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .proWrapper {
     .proName,
     .proNameClicked {
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 

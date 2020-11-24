@@ -20,7 +20,7 @@
 }
 
 .ReactTable .rt-thead {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -101,7 +101,7 @@
 
 .ReactTable .rt-table .rt-tbody .rt-tr-group .rt-tr.-even:hover,
 .ReactTable .rt-table .rt-tbody .rt-tr-group .rt-tr.-odd:hover {
-  background-color: #ebf7de;
+  background-color: #e8f7fa;
 }
 
 .ReactTable .rt-table .rt-thead .rt-tr .rt-th {

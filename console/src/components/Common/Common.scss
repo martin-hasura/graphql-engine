@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Gudea:400,500,700');
-
+@import url('https://fonts.googleapis.com/css?family=Inter:400,600');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 
 body {
-  background-color: #f8fafb;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -85,10 +86,12 @@ table tbody tr th {
   // background: #444;
   // color: $navbar-inverse-color;
   color: #333;
-  border: 1px solid #e5e5e5;
-  border-bottom: 0px;
+  border: 0;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   // background-color: #F8F8F8;
-  background-color: #fff;
+  background-color: #fbfbfb;
+  border-bottom-right-radius: 4px;
 
   /*
   a,a:visited {
@@ -111,7 +114,7 @@ table tbody tr th {
 
     li {
       transition: color 0.5s;
-      font-size: 16px;
+      font-size: 14px;
       border-bottom: 1px solid #e6e6e6;
       padding: 0px 0px;
       // border-left: 5px solid transparent;
@@ -121,8 +124,12 @@ table tbody tr th {
         background-color: #f0f0f0;
         width: 100%;
         word-wrap: break-word;
-        padding: 15px 0 15px 20px;
+        padding: 8px 0 8px 20px;
         display: block;
+        font-weight: 600;
+      }
+      a:hover {
+        color: #e65678;
       }
     }
 
@@ -135,14 +142,15 @@ table tbody tr th {
     }
 
     .active {
-      // border-left: 5px solid #FFC627;
+      border-left: 4px solid #49b5d4;
       font-weight: bold;
       color: #333;
       text-decoration: none;
 
       a {
         text-decoration: none;
-        background-color: #fff3d5;
+        background-color: #ffffff;
+        // border-left: 4px solid #1eb4d4;
         display: inline-block;
       }
     }
@@ -412,7 +420,7 @@ input {
 }
 
 .background_transparent {
-  background-color: #f8fafb;
+  background-color: #ffffff;
   box-shadow: none;
   padding: 0 0;
 }
@@ -543,7 +551,9 @@ input {
 }
 
 .box_shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // ToDO: Remove box_shadow and apply to GraphiQL
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cccccc;
 }
 
 .code_space {
@@ -780,17 +790,22 @@ code {
 }
 
 .yellow_button {
-  background-color: #fec53d;
-  border-radius: 3px;
-  color: #606060;
-  border: 1px solid #fec53d;
+  background-color: #49b5d4;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.3), rgba(255,255,255,0));
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #31798D;
   padding: 5px 10px;
   font-size: 13px;
   font-weight: 600;
   line-height: 1.5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.15s ease-in-out;
 
   &:hover {
-    background-color: #f2b130;
+    color: #ffffff;
+    background-color: #43A6C2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -803,7 +818,9 @@ code {
 
 .yellow_button:focus {
   outline: none;
-  background-color: #f2b130;
+  color: #ffffff;
+  background-color: #40a1bd;
+  box-shadow: none;
 }
 
 .default_button {
@@ -821,6 +838,10 @@ code {
   &:hover {
     background-color: #efefef;
   }
+}
+
+.btn-xs, .btn-group-xs > .btn{
+  padding: 5px 10px;
 }
 
 .default_button:focus {
@@ -908,9 +929,9 @@ code {
 }
 
 .subheading_text {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 8px;
   margin-top: 0;
   margin-bottom: 0;
 
@@ -946,7 +967,7 @@ code {
 }
 
 .descriptionText {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -1009,14 +1030,13 @@ code {
 }
 
 .header_project_name {
-  font-family: 'Gudea';
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
   color: #fff;
   text-transform: uppercase;
   display: inline-block;
   padding-left: 20px;
   font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .tableButton {
@@ -1036,7 +1056,7 @@ code {
 
 .subHeader {
   background: transparent;
-  font-family: 'Gudea';
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
 
   h2 {
     margin: 0;
@@ -1044,7 +1064,7 @@ code {
   }
 
   .nav {
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #f0f0f0;
     margin-left: -15px !important;
     padding-left: 15px !important;
 
@@ -1055,7 +1075,7 @@ code {
         border: 1px solid transparent;
         border-top: 3px solid transparent;
         margin-right: 10px;
-        background-color: #e6e6e6;
+        background-color: #f0f0f0;
         border-radius: 4px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -1064,7 +1084,7 @@ code {
 
         a {
           color: #666666;
-          padding: 12px 16px;
+          padding: 8px 16px;
         }
 
         a:hover {
@@ -1078,14 +1098,14 @@ code {
 
       .active {
         border-radius: 4px;
-        background-color: #f8fafb;
+        background-color: #ffffff;
         /* color: #333; */
         border: 1px solid #e6e6e6;
         border-bottom: 0;
         border-radius: 4px;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
-        border-top: 3px solid #ffc627;
+        border-top: 3px solid #49b5d4;
 
         a {
           color: #333;
@@ -1108,7 +1128,7 @@ code {
       border: 1px solid transparent;
       border-top: 3px solid transparent;
       margin-right: 10px;
-      background-color: #e6e6e6;
+      background-color: #f0f0f0;
       border-radius: 4px;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -1117,7 +1137,7 @@ code {
 
       a {
         color: #666666;
-        padding: 12px 16px;
+        padding: 8px 16px;
       }
 
       a:hover {
@@ -1131,14 +1151,14 @@ code {
 
     .active {
       border-radius: 4px;
-      background-color: #f8fafb;
+      background-color: #ffffff;
       /* color: #333; */
       border: 1px solid #e6e6e6;
       border-bottom: 0;
       border-radius: 4px;
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
-      border-top: 3px solid #ffc627;
+      border-top: 3px solid #49b5d4;
 
       a {
         color: #333;
@@ -1153,7 +1173,7 @@ code {
   width: 100%;
   float: left;
   margin-bottom: 20px;
-  font-family: 'Gudea';
+  font-family: -apple-system,'Inter',Helvetica,Arial,sans-serif,Segoe UI;
 
   h2 {
     margin: 0;
@@ -1199,7 +1219,7 @@ code {
 .copyBtn {
   background-color: #fff;
   border-color: #ccc;
-  margin-right: -1px;
+  margin-right: -2px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }

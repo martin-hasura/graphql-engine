@@ -6,7 +6,7 @@
   min-height: 30px;
 
   .inputRow {
-    margin: 20px 0;
+    margin: 8px 0;
 
     div[class^=col-xs-] {
       padding-left: 0;
@@ -14,12 +14,16 @@
     }
 
     :global(.form-control) {
+      background-color: #ffffff; 
       height: 35px;
       padding: 0 12px;
+      margin-right:4px;
+      box-shadow: none;
     }
 
     :global(.form-control):focus {
-      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0px rgba(102, 175, 233, 0.6);
+      background-color: #ffffff; 
+      box-shadow: 0 0 0 4px rgba(73, 181, 212, 0.1);
     }
 
     :global(.fa) {

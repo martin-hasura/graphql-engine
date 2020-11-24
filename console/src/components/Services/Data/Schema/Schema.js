@@ -43,7 +43,7 @@ import styles from '../../../Common/Common.scss';
 
 const SchemaPermissionsButton = ({ schema }) => (
   <Link to={getSchemaPermissionsRoute(schema)} style={{ marginLeft: '20px' }}>
-    <Button color="white" size="xs" className={styles.add_mar_left_mid}>
+    <Button color="white" size="md" className={styles.add_mar_left_mid}>
       Show Permissions Summary
     </Button>
   </Link>
@@ -83,8 +83,8 @@ const OpenCreateSection = React.forwardRef(
 );
 
 const ClosedCreateSection = ({ onClick }) => (
-  <Button color="white" size="xs" onClick={onClick} title="Create new schema">
-    Create
+  <Button color="white" size="md" onClick={onClick} title="Create new schema">
+    Create New Schema
   </Button>
 );
 
@@ -130,12 +130,12 @@ const DeleteSchemaButton = ({ dispatch, migrationMode }) => {
   return (
     migrationMode && (
       <Button
-        color="white"
-        size="xs"
+        color="red"
+        size="md"
         onClick={handleDelete}
         title="Delete current schema"
       >
-        Delete
+        Delete Schema
       </Button>
     )
   );

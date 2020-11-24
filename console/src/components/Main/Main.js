@@ -365,7 +365,7 @@ class Main extends React.Component {
                     ${isProClicked ? styles.proNameClicked : styles.proName}
                     ${isPopUpOpen ? styles.navActive : ''}`}
                 >
-                  CLOUD
+                  Cloud
                 </span>
                 {isPopUpOpen && <ProPopup toggleOpen={this.toggleProPopup} />}
               </div>
